@@ -29,8 +29,10 @@
         </div>
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">
-        <img class="w-100 hero-img" src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png"
-          alt="hexagon symbol with element tag brackets">
+        <div class="d-flex align-items-center" style="height: 100%">
+          <img class="w-100 hero-img" src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png"
+            alt="hexagon symbol with element tag brackets">
+        </div>
       </div>
       <div class="col-md-4">
         <div class="mt-5">
@@ -107,12 +109,32 @@
 
 .hero-img {
   filter: brightness(0) invert(1);
+
 }
 
 .project-img {
   height: 50dvh;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 1200px) {
+  .project-img {
+    height: 38dvh;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .project-img {
+    height: 28dvh;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-img {
+    height: 38dvh;
+  }
 }
 
 .project-box {
