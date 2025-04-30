@@ -1,9 +1,14 @@
 @import '_main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet');
 
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+  background-image: url('https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 main {
@@ -17,4 +22,18 @@ main {
   flex-direction: column;
   justify-content: start;
   align-items: end;
+}
+
+.cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
