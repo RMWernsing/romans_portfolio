@@ -14,6 +14,27 @@ watch(theme, () => {
   saveState('theme', theme.value)
 }, { immediate: true })
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
+function scrollToElementById(elementId) {
+  const element = document.getElementById(elementId);
+  if (element) {
+    const navbarHeight = document.querySelector('nav').offsetHeight; // Get the navbar height
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY; // Element's position relative to the document
+    const offsetPosition = elementPosition - navbarHeight + 20; // Adjust with extra padding (10px)
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  }
+}
+
 </script>
 
 <template>
@@ -24,10 +45,15 @@ watch(theme, () => {
           <div class="bg-light rounded-pill mt-4 mb-5 p-2 d-flex justify-content-between shadow-light">
             <img class="navbar-brand" alt="logo" src="../assets/img/r-logo.png" height="65" />
             <div class="d-flex gap-5 align-items-center fs-5 fw-bold">
-              <span class="hover-underline">Home</span>
-              <span class="hover-underline">Projects</span>
-              <span class="hover-underline">About</span>
-              <span class="hover-underline">Contact</span>
+              <span @click="scrollToTop" class="hover-underline" role="button" title="Navigate To Home">Home</span>
+              <span @click="scrollToElementById('skillsSection')" class="hover-underline" role="button"
+                title="Navigate To Skills Section">Skills</span>
+              <span @click="scrollToElementById('projectsSection')" class="hover-underline" role="button"
+                title="Navigate To Projects Section">Projects</span>
+              <span @click="scrollToElementById('aboutSection')" class="hover-underline" role="button"
+                title="Navigate To About Section">About</span>
+              <span @click="scrollToElementById('contactSection')" class="hover-underline" role="button"
+                title="Navigate To Contact Section">Contact</span>
             </div>
             <div class="d-flex align-items-center fs-2 me-3 gap-2">
               <!-- TODO change this link to the actual LinkedIn Profile link when you manage to log into your LinkedIn account -->

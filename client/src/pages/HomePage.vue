@@ -1,6 +1,10 @@
 <script setup>
-
-
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
 </script>
 
 <template>
@@ -8,7 +12,7 @@
     <div class="row text-light">
       <div class="col-md-7">
         <div>
-          <h1 class="display-1 cal-sans-regular header-color">Hello <br> I'm Roman Wernsing</h1>
+          <h1 id="topSection" class="display-1 cal-sans-regular header-color">Hello <br> I'm Roman Wernsing</h1>
         </div>
         <div class="montserrat-regular">
           <h3 class="fs-1">Full Stack Web Developer</h3>
@@ -29,14 +33,32 @@
         </div>
       </div>
       <div class="col-md-5 d-none d-sm-none d-md-block">
-        <div class="d-flex align-items-center" style="height: 100%">
+        <div class="d-flex align-items-center justify-content-center" style="height: 100%">
           <img class="w-100 hero-img" src="https://cdn.pixabay.com/photo/2017/05/12/15/16/hexagon-2307350_1280.png"
             alt="hexagon symbol with element tag brackets">
         </div>
       </div>
+      <div class="col-12">
+        <div class="row justify-content-end">
+          <div class="col-md-4">
+            <div class="mt-5 mb-4">
+              <h2 id="skillsSection" class="display-3 cal-sans-regular header-color text-end">Skills</h2>
+            </div>
+          </div>
+          <div class="col-12 logo d-flex gap-4 justify-content-center flex-wrap">
+            <img src="../assets/img/html-logo.png" alt="Logo for HTML">
+            <img src="../assets/img/css-logo.png" alt="Logo for CSS">
+            <img src="../assets/img/js-logo.png" alt="Logo for Java Scripts">
+            <img src="../assets/img/c-sharp-logo.png" alt="Logo for C#">
+            <img src="https://www.myqnap.org/wp-content/uploads/nodejs-logo.gif" alt="Logo for Node.js">
+            <img src="../assets/img/mySQL-logo.png" alt="Logo for MySQL">
+            <img src="../assets/img/vue-logo.png" alt="Logo for Vue.js">
+          </div>
+        </div>
+      </div>
       <div class="col-md-4">
         <div class="mt-5 mb-4">
-          <h2 class="display-3 cal-sans-regular header-color">Projects</h2>
+          <h2 id="projectsSection" class="display-3 cal-sans-regular header-color">Projects</h2>
         </div>
       </div>
       <div class="col-12">
@@ -99,28 +121,51 @@
     <div class="row justify-content-end">
       <div class="col-md-4">
         <div class="mt-5 mb-4">
-          <h2 class="display-3 cal-sans-regular header-color text-end">About Me</h2>
+          <h2 id="aboutSection" class="display-3 cal-sans-regular header-color text-end">About Me</h2>
         </div>
       </div>
       <div class="col-12">
         <div class="row justify-content-end">
+          <div class="col-md-5 d-flex align-items-center justify-content-center">
+            <div>
+              <img class="w-100 profile-img my-5"
+                src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+            </div>
+          </div>
           <div class="col-md-7">
             <div class="montserrat-regular text-light fs-5 text-end">
               <p>
-                Hey, I’m Roman — a junior web developer based in Boise, ID. I started seriously coding in December 2024,
-                but my interest in tech goes way back. I grew up around it, thanks to a family member who passed down
-                his love for all things digital, and that curiosity never really left.
-
+                I'm junior web developer based in Boise, ID. I started seriously coding in December 2024,
+                but my interest in tech started early in my life. Thanks to a family member who passed down
+                his love for all coding and technology, that curiosity never really left.
+              </p>
+              <p>
                 I kicked things off with some Python courses online, but quickly realized I wanted to move faster. That
                 led me to Boise CodeWorks, where I dove deep into web development and built a solid foundation. More
                 importantly, I discovered that I love coding — the constant learning, the problem-solving, the "aha!"
                 moments when something finally clicks.
               </p>
               <p>
-                I'm currently looking for a Frontend or Fullstack developer internship or postion. Please reach out if
-                you think I would be a good fit for your team!
+                I'm looking for an internship or junior role in Frontend or Fullstack development. If you're looking for
+                someone who's excited to learn, loves a good challenge, and brings a lot of energy to the table, please
+                feel free to reach out!
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="mt-5 mb-4">
+          <h2 id="contactSection" class="display-3 cal-sans-regular header-color">Contact <br> Information</h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <p></p>
           </div>
         </div>
       </div>
@@ -158,12 +203,17 @@
   .project-img {
     height: 28dvh;
   }
+
+  .profile-img {
+    height: 10dvh;
+  }
 }
 
 @media (max-width: 767px) {
   .project-img {
     height: 38dvh;
   }
+
 }
 
 .project-box {
@@ -182,8 +232,14 @@
   width: 20%;
 }
 
-.split-para {
-  display: block;
-  margin: 10px;
+.profile-img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: 40dvh;
+  object-fit: cover;
+}
+
+.logo img {
+  height: 13dvh;
 }
 </style>
