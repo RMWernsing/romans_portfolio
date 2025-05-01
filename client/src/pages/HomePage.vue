@@ -11,7 +11,7 @@
           <h1 class="display-1 cal-sans-regular header-color">Hello <br> I'm Roman Wernsing</h1>
         </div>
         <div class="montserrat-regular">
-          <h3 class="fs-2">Full Stack Web Developer</h3>
+          <h3 class="fs-1">Full Stack Web Developer</h3>
           <p class="pt-2 fs-5">
             I'm a full stack web developer. I graduated from Boise CodeWorks in May of 2025, where I built a strong
             foundation in modern web technologies.
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="mt-5">
+        <div class="mt-5 mb-4">
           <h2 class="display-3 cal-sans-regular header-color">Projects</h2>
         </div>
       </div>
@@ -96,6 +96,35 @@
         </div>
       </div>
     </div>
+    <div class="row justify-content-end">
+      <div class="col-md-4">
+        <div class="mt-5 mb-4">
+          <h2 class="display-3 cal-sans-regular header-color text-end">About Me</h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-end">
+          <div class="col-md-7">
+            <div class="montserrat-regular text-light fs-5 text-end">
+              <p>
+                Hey, I’m Roman — a junior web developer based in Boise, ID. I started seriously coding in December 2024,
+                but my interest in tech goes way back. I grew up around it, thanks to a family member who passed down
+                his love for all things digital, and that curiosity never really left.
+
+                I kicked things off with some Python courses online, but quickly realized I wanted to move faster. That
+                led me to Boise CodeWorks, where I dove deep into web development and built a solid foundation. More
+                importantly, I discovered that I love coding — the constant learning, the problem-solving, the "aha!"
+                moments when something finally clicks.
+              </p>
+              <p>
+                I'm currently looking for a Frontend or Fullstack developer internship or postion. Please reach out if
+                you think I would be a good fit for your team!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -151,5 +180,10 @@
 
 .project-description {
   width: 20%;
+}
+
+.split-para {
+  display: block;
+  margin: 10px;
 }
 </style>

@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div class="about">
-    <h1 class="text-light mt-5">This is the about page</h1>
-  </div>
+  <h1>this is the about page</h1>
 </template>
 
 <style scoped lang="scss"></style>

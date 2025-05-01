@@ -25,8 +25,8 @@ watch(theme, () => {
             <img class="navbar-brand" alt="logo" src="../assets/img/r-logo.png" height="65" />
             <div class="d-flex gap-5 align-items-center fs-5 fw-bold">
               <span class="hover-underline">Home</span>
+              <span class="hover-underline">Projects</span>
               <span class="hover-underline">About</span>
-              <span class="hover-underline">Portfolio</span>
               <span class="hover-underline">Contact</span>
             </div>
             <div class="d-flex align-items-center fs-2 me-3 gap-2">
