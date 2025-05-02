@@ -44,7 +44,7 @@ function scrollToElementById(elementId) {
         <div class="col-12">
           <div class="bg-light rounded-pill mt-4 mb-5 p-2 d-flex justify-content-between shadow-light">
             <img class="navbar-brand" alt="logo" src="../assets/img/r-logo.png" height="65" />
-            <div class="d-flex gap-5 align-items-center fs-5 fw-bold">
+            <div class="d-flex gap-5 align-items-center fs-5 fw-bold nav-button">
               <span @click="scrollToTop" class="hover-underline" role="button" title="Navigate To Home">Home</span>
               <span @click="scrollToElementById('skillsSection')" class="hover-underline" role="button"
                 title="Navigate To Skills Section">Skills</span>
@@ -75,6 +75,10 @@ function scrollToElementById(elementId) {
 <style lang="scss" scoped>
 a {
   text-decoration: none;
+}
+
+.nav-button {
+  display: flex;
 }
 
 .nav-link {
@@ -111,10 +115,7 @@ span {
 section {
   background: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.469) 70%,
-      /* Opaque at the top */
-      rgba(255, 255, 255, 0) 100%
-      /* Transparent at the bottom */
-    ),
+      rgba(255, 255, 255, 0) 100%),
     linear-gradient(180deg,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.54) 41%,
@@ -123,5 +124,11 @@ section {
   // -webkit-backdrop-filter: blur(5px);
   width: 100%;
   z-index: 1000;
+}
+
+@media (max-width: 870px) {
+  .nav-button {
+    display: none;
+  }
 }
 </style>

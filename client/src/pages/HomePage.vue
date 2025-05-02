@@ -45,7 +45,7 @@ function scrollToTop() {
               <h2 id="skillsSection" class="display-3 cal-sans-regular header-color text-end">Skills</h2>
             </div>
           </div>
-          <div class="col-12 logo d-flex gap-4 justify-content-center flex-wrap">
+          <div class="col-12 logo d-flex gap-4 justify-content-center flex-wrap align-items-center">
             <img src="../assets/img/html-logo.png" alt="Logo for HTML">
             <img src="../assets/img/css-logo.png" alt="Logo for CSS">
             <img src="../assets/img/js-logo.png" alt="Logo for Java Scripts">
@@ -134,7 +134,7 @@ function scrollToTop() {
             </div>
           </div>
           <div class="col-md-7">
-            <div class="montserrat-regular text-light fs-5 text-end">
+            <div class="montserrat-regular text-light fs-5 text-end me-1">
               <p>
                 I'm junior web developer based in Boise, ID. I started seriously coding in December 2024,
                 but my interest in tech started early in my life. Thanks to a family member who passed down
@@ -174,6 +174,14 @@ function scrollToTop() {
 </template>
 
 <style scoped lang="scss">
+.logo img {
+  height: 13dvh;
+}
+
+.logo {
+  height: 40dvh;
+}
+
 .header-color {
   background: #1C84CF;
   background: linear-gradient(85deg, rgba(202, 127, 240, 1) 0%, rgba(43, 72, 255, 1) 100%);
@@ -197,7 +205,16 @@ function scrollToTop() {
     height: 38dvh;
   }
 
+  .logo img {
+    height: 10dvh;
+  }
+
+  .logo {
+    height: 30dvh;
+  }
+
 }
+
 
 @media (max-width: 991px) {
   .project-img {
@@ -206,6 +223,14 @@ function scrollToTop() {
 
   .profile-img {
     height: 10dvh;
+  }
+
+  .logo img {
+    height: 8dvh;
+  }
+
+  .logo {
+    height: 20dvh;
   }
 }
 
@@ -237,9 +262,5 @@ function scrollToTop() {
   border-radius: 50%;
   height: 40dvh;
   object-fit: cover;
-}
-
-.logo img {
-  height: 13dvh;
 }
 </style>
