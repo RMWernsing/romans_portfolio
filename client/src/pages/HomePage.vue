@@ -163,9 +163,25 @@ function scrollToTop() {
         </div>
       </div>
       <div class="col-12">
-        <div class="row">
+        <div class="row justify-content-evenly">
           <div class="col-12">
-            <p></p>
+            <div class="text-light mb-5">
+              <h3 class="fs-1 montserrat-regular">Have any questions?</h3>
+              <p class="fs-5 montserrat-regular">Feel free to reach out!</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-5">
+              <p class="fs-4 text-light montserrat-regular">Email Address</p>
+              <p class="text-light montserrat-regular">wernsingroman@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div claass="mb-5">
+              <p class="fs-4 text-light montserrat-regular">LinkedIn Profile Link</p>
+              <a href="https://www.linkedin.com/in/roman-wernsing-514b0a323?trk=people-guest_people_search-card"
+                class="text-light montserrat-regular" target="_blank">Roman Wernsing</a>
+            </div>
           </div>
         </div>
       </div>

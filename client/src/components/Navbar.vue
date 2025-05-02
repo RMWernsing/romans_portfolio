@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue';
 import { loadState, saveState } from '../utils/Store.js';
 import Login from './Login.vue';
+import { logger } from '@/utils/Logger.js';
 
 const theme = ref(loadState('theme') || 'light')
 
@@ -13,6 +14,7 @@ watch(theme, () => {
   document.documentElement.setAttribute('data-bs-theme', theme.value)
   saveState('theme', theme.value)
 }, { immediate: true })
+
 
 function scrollToTop() {
   window.scrollTo({
@@ -44,16 +46,18 @@ function scrollToElementById(elementId) {
         <div class="col-12">
           <div class="bg-light rounded-pill mt-4 mb-5 p-2 d-flex justify-content-between shadow-light">
             <img class="navbar-brand" alt="logo" src="../assets/img/r-logo.png" height="65" />
-            <div class="d-flex gap-5 align-items-center fs-5 fw-bold nav-button">
-              <span @click="scrollToTop" class="hover-underline" role="button" title="Navigate To Home">Home</span>
-              <span @click="scrollToElementById('skillsSection')" class="hover-underline" role="button"
-                title="Navigate To Skills Section">Skills</span>
-              <span @click="scrollToElementById('projectsSection')" class="hover-underline" role="button"
-                title="Navigate To Projects Section">Projects</span>
-              <span @click="scrollToElementById('aboutSection')" class="hover-underline" role="button"
-                title="Navigate To About Section">About</span>
-              <span @click="scrollToElementById('contactSection')" class="hover-underline" role="button"
-                title="Navigate To Contact Section">Contact</span>
+            <div class="nav-button pt-3">
+              <div class="d-flex gap-5 align-items-center fs-5 fw-bold">
+                <span @click="scrollToTop" class="hover-underline" role="button" title="Navigate To Home">Home</span>
+                <span @click="scrollToElementById('skillsSection')" class="hover-underline" role="button"
+                  title="Navigate To Skills Section">Skills</span>
+                <span @click="scrollToElementById('projectsSection')" class="hover-underline" role="button"
+                  title="Navigate To Projects Section">Projects</span>
+                <span @click="scrollToElementById('aboutSection')" class="hover-underline" role="button"
+                  title="Navigate To About Section">About</span>
+                <span @click="scrollToElementById('contactSection')" class="hover-underline" role="button"
+                  title="Navigate To Contact Section">Contact</span>
+              </div>
             </div>
             <div class="d-flex align-items-center fs-2 me-3 gap-2">
               <!-- TODO change this link to the actual LinkedIn Profile link when you manage to log into your LinkedIn account -->
@@ -78,8 +82,10 @@ a {
 }
 
 .nav-button {
-  display: flex;
+  display: block;
+
 }
+
 
 .nav-link {
   text-transform: uppercase;
@@ -129,6 +135,7 @@ section {
 @media (max-width: 870px) {
   .nav-button {
     display: none;
+    background-color: red;
   }
 }
 </style>
