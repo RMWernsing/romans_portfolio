@@ -61,8 +61,8 @@ function scrollToElementById(elementId) {
             </div>
             <div class="d-flex align-items-center fs-2 me-3 gap-2">
               <!-- TODO change this link to the actual LinkedIn Profile link when you manage to log into your LinkedIn account -->
-              <a href="https://www.linkedin.com/in/roman-wernsing-514b0a323?trk=people-guest_people_search-card"
-                target="_blank" title="Navigate to Roman Wernsings LinkedIn Profile Page">
+              <a href="https://www.linkedin.com/in/roman-wernsing-514b0a323" target="_blank"
+                title="Navigate to Roman Wernsings LinkedIn Profile Page">
                 <span class="mdi mdi-linkedin text-dark"></span>
               </a>
               <a href="https://github.com/RMWernsing" target="_blank" title="Navigate to Roman Wernsings GitHub Page">

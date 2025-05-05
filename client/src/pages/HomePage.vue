@@ -177,10 +177,10 @@ function scrollToTop() {
             </div>
           </div>
           <div class="col-md-3">
-            <div claass="mb-5">
+            <div class="mb-5">
               <p class="fs-4 text-light montserrat-regular">LinkedIn Profile Link</p>
-              <a href="https://www.linkedin.com/in/roman-wernsing-514b0a323?trk=people-guest_people_search-card"
-                class="text-light montserrat-regular" target="_blank">Roman Wernsing</a>
+              <a href="https://www.linkedin.com/in/roman-wernsing-514b0a323" class="text-light montserrat-regular"
+                target="_blank">Roman Wernsing</a>
             </div>
           </div>
         </div>
