@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKERFILE_PATH: Dockerfile   # 👈 Update this to wherever your Dockerfile is within your repository
+  DOCKERFILE_PATH: client/Dockerfile   # 👈 Update this to wherever your Dockerfile is within your repository
 
 jobs:
   build-push:
