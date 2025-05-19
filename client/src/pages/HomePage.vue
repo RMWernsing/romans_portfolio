@@ -128,9 +128,7 @@ function scrollToTop() {
         <div class="row justify-content-end">
           <div class="col-md-5 d-flex align-items-center justify-content-center">
             <div>
-              <img class="w-100 profile-img my-5"
-                src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
+              <img class="w-100 profile-img my-5" src="../assets/img/profile_picture.jpeg" alt="">
             </div>
           </div>
           <div class="col-md-7">
@@ -173,7 +171,11 @@ function scrollToTop() {
           <div class="col-md-3">
             <div class="mb-5">
               <p class="fs-4 text-light montserrat-regular">Email Address</p>
-              <p class="text-light montserrat-regular">wernsingroman@gmail.com</p>
+              <p class="text-light montserrat-regular">
+                <a href="mailto:wernsingroman@gmail.com">
+                  wernsingroman@gmail.com
+                </a>
+              </p>
             </div>
           </div>
           <div class="col-md-3">

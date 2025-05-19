@@ -63,7 +63,7 @@
 
 # ENTRYPOINT ["dotnet", "romans_portfolio.dll"]
 
-FROM node:22-alpine
+FROM node:lts-alpine
 
 WORKDIR /app
 
@@ -73,4 +73,4 @@ RUN npm install --production
 
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "serve"]
