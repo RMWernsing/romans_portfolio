@@ -81,6 +81,6 @@ COPY client ./
 RUN npm run build
 
 FROM busybox
-WORKDIR /
-COPY --from=client-builder /app/client/dist .
+WORKDIR /srv
+COPY --from=client-builder /app/client/dist /srv
 CMD ["sleep", "infinity"]
