@@ -63,14 +63,24 @@
 
 # ENTRYPOINT ["dotnet", "romans_portfolio.dll"]
 
-FROM node:lts-alpine
+FROM --platform=linux/amd64 node:23-slim AS client-builder
 
-WORKDIR /app
+# Set the working directory in the client builder container
+WORKDIR /app/client
 
-COPY package*.json ./
+# Copy the client-side package.json and package-lock.json to the client builder container
+COPY client/package*.json ./
 
-RUN npm install --production
+# Install client application dependencies
+RUN npm install
 
-COPY . .
+# Copy the client application source code to the client builder container
+COPY client ./
 
-CMD ["npm", "run", "serve"]
+# Build the client-side code
+RUN npm run build
+
+FROM busybox
+WORKDIR /
+COPY --from=client-builder /app/client/dist .
+CMD ["sleep", "infinity"]
