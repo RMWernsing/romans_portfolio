@@ -63,7 +63,7 @@ function scrollToTop() {
       </div>
       <div class="col-12">
         <div class="row">
-          <div class="col-md-6">
+          <!-- <div class="col-md-6">
             <div class="mb-5 project-box">
               <img class="w-100 project-img rounded-top-4"
                 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -75,8 +75,8 @@ function scrollToTop() {
                   technologies uses</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
+          </div> -->
+          <!-- <div class="col-md-6">
             <div class="mb-5 project-box">
               <img class="w-100 project-img rounded-top-4"
                 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -88,25 +88,25 @@ function scrollToTop() {
                   technologies uses</span>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-6">
-            <div class="mb-5 project-box">
-              <img class="w-100 project-img rounded-top-4"
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-              <div class="p-3 d-flex justify-content-between align-items-center">
-                <span class="text-light montserrat-regular fs-4">Tower</span>
-                <span class="w-50">description of what this project is about, and how much i enjoyed working on it.
-                  maybe the
-                  technologies uses</span>
+            <a href="tower.romanwernsing.org" target="_blank">
+              <div class="mb-5 project-box">
+                <img class="w-100 project-img rounded-top-4" src="../assets/img/tower-screenshot.png"
+                  alt="screenshot of Tower">
+                <div class="p-3 d-flex justify-content-between align-items-center">
+                  <span class="text-light montserrat-regular fs-4">Tower</span>
+                  <span class="w-50">description of what this project is about, and how much i enjoyed working on it.
+                    maybe the
+                    technologies uses</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-6">
             <div class="mb-5 project-box">
-              <img class="w-100 project-img rounded-top-4"
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
+              <img class="w-100 project-img rounded-top-4" src="../assets/img/keepr-screen-shot.png"
+                alt="screenshot of Keepr">
               <div class="p-3 d-flex justify-content-between align-items-center">
                 <span class="text-light montserrat-regular fs-4">Keepr</span>
                 <span class="w-50">description of what this project is about, and how much i enjoyed working on it.
