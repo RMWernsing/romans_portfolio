@@ -15,7 +15,7 @@ watch(theme, () => {
   saveState('theme', theme.value)
 }, { immediate: true })
 
-
+// function will scroll to the top of the page
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -23,6 +23,7 @@ function scrollToTop() {
   });
 }
 
+// function that, when pressing on the corresponding button, will scroll you to the appropriate part of the page
 function scrollToElementById(elementId) {
   const element = document.getElementById(elementId);
   if (element) {

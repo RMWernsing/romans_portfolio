@@ -24,7 +24,8 @@ function scrollToTop() {
             I specialize in HTML, CSS, and JavaScript for creating responsive,
             user-friendly interfaces. I also have experience with backend development using REST APIs, Node.js, C#, and
             SQL to help websites work smoothly behind the scenes. My
-            drive for continuous development in the web dev field keeps me exploring new tools and frameworks to enhance
+            drive for continuous improvement in the web development field keeps me exploring new tools and frameworks to
+            enhance
             both functionality
             and
             design. I thrive on solving problems and building clean, efficient code that brings ideas to life on the
@@ -90,30 +91,30 @@ function scrollToTop() {
             </div>
           </div> -->
           <div class="col-md-6">
-            <a href="tower.romanwernsing.org" target="_blank">
+            <a href="https://tower.romanwernsing.org" target="_blank" title="Navigate to Tower">
               <div class="mb-5 project-box">
                 <img class="w-100 project-img rounded-top-4" src="../assets/img/tower-screenshot.png"
-                  alt="screenshot of Tower">
+                  alt="Screenshot of Tower">
                 <div class="p-3 d-flex justify-content-between align-items-center">
                   <span class="text-light montserrat-regular fs-4">Tower</span>
-                  <span class="w-50">description of what this project is about, and how much i enjoyed working on it.
-                    maybe the
-                    technologies uses</span>
+                  <span class="w-50">Tower is a ticket and event managing app. I built it with Vue for the front-end
+                    framework and Node.js and MongoDB for the backend and database. </span>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-6">
-            <div class="mb-5 project-box">
-              <img class="w-100 project-img rounded-top-4" src="../assets/img/keepr-screen-shot.png"
-                alt="screenshot of Keepr">
-              <div class="p-3 d-flex justify-content-between align-items-center">
-                <span class="text-light montserrat-regular fs-4">Keepr</span>
-                <span class="w-50">description of what this project is about, and how much i enjoyed working on it.
-                  maybe the
-                  technologies uses</span>
+            <a href="https://keepr.romanwernsing.org" target="_blank" title="Navigate to Keepr">
+              <div class="mb-5 project-box">
+                <img class="w-100 project-img rounded-top-4" src="../assets/img/keepr-screen-shot.png"
+                  alt="Screenshot of Keepr">
+                <div class="p-3 d-flex justify-content-between align-items-center">
+                  <span class="text-light montserrat-regular fs-4">Keepr</span>
+                  <span class="w-50">Keepr is a photo based social media app, similar to Pintrest. I built it with vue
+                    for the front-end .NET and MySQL for the backend and database.</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -136,7 +137,7 @@ function scrollToTop() {
               <p>
                 I'm junior web developer based in Boise, ID. I started seriously coding in December 2024,
                 but my interest in tech started early in my life. Thanks to a family member who passed down
-                his love for all coding and technology, that curiosity never really left.
+                his love for coding and technology, that curiosity never really left me.
               </p>
               <p>
                 I kicked things off with some Python courses online, but quickly realized I wanted to move faster. That
@@ -146,7 +147,7 @@ function scrollToTop() {
               </p>
               <p>
                 I'm looking for an internship or junior role in Frontend or Fullstack development. If you're looking for
-                someone who's excited to learn, loves a good challenge, and brings a lot of energy to the table, please
+                someone who's excited to learn, loves a good challenge, and brings a lot of energy, please
                 feel free to reach out!
               </p>
             </div>
@@ -172,7 +173,7 @@ function scrollToTop() {
             <div class="mb-5">
               <p class="fs-4 text-light montserrat-regular">Email Address</p>
               <p class="text-light montserrat-regular">
-                <a href="mailto:wernsingroman@gmail.com">
+                <a href="mailto:wernsingroman@gmail.com" title="Send an email to wernsingroman@gmail.com">
                   wernsingroman@gmail.com
                 </a>
               </p>
@@ -182,7 +183,7 @@ function scrollToTop() {
             <div class="mb-5">
               <p class="fs-4 text-light montserrat-regular">LinkedIn Profile Link</p>
               <a href="https://www.linkedin.com/in/roman-wernsing-514b0a323" class="text-light montserrat-regular"
-                target="_blank">Roman Wernsing</a>
+                target="_blank" title="Navigate to Roman Wernsing's LinkedIn">Roman Wernsing</a>
             </div>
           </div>
         </div>
@@ -217,6 +218,12 @@ function scrollToTop() {
   object-fit: cover;
   object-position: center;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 
 @media (max-width: 1200px) {
   .project-img {
